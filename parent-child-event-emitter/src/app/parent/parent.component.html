@@ -1,0 +1,5 @@
+<p>
+  Counter is {{showCounter}}
+  <app-child [counter]="showCounter" (counterEmitter)="counterChange($event)"></app-child>
+  
+</p>
