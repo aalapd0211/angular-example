@@ -9,7 +9,7 @@ import {FormBuilder, FormGroup} from '@angular/forms';
 })
 export class CartComponent implements OnInit {
   items;
-  checkoutForm :FormGroup;
+  checkoutForm: FormGroup;
   constructor(
     private cartService: CartService,
     private formBuider: FormBuilder,
