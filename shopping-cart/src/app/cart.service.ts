@@ -6,12 +6,13 @@ import { Injectable } from '@angular/core';
 export class CartService {
 
   items=[];
-  constructor() { }
 
-  addToCart(product){
-    console.log(product);
-    this.items.push[product];
+  
+  addToCart(product) {
+    this.items.push(product);
   }
+
+  
 
   getItems(){
     return this.items;
