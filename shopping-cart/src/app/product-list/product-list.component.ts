@@ -12,4 +12,11 @@ export class ProductListComponent implements OnInit {
   ngOnInit() {
   }
 
+  share() {
+    alert('procust has been shared');
+  }
+
+  onNotify() {
+    alert('Notify you');
+  }
 }
