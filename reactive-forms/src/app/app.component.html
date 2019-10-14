@@ -1,0 +1,21 @@
+<form [formGroup]="angForm">
+  <input type = "text" 
+        name = "email" 
+        placeholder = "email" 
+        formControlName="email" 
+        #email>
+  <br/>
+  <div *ngIf="email.invalid && (email.dirty || email.touched)"
+    class="alert alert-danger"></div>
+    <br/>
+  <input type = "password" 
+        name = "pwd" 
+        placeholder = "password" 
+        formControlName="password" 
+        #password>
+  <br/>
+  <input type = "submit" 
+          value = "submit" 
+          (click) = "onClickSubmit(email.value, password.value)" >
+          <br/>
+</form>
